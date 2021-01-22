@@ -22,12 +22,12 @@
 
 html[data-theme='dark'] {
     --bg-color: #1E1B1A;
-    --secondary-bg-color: #25100e;
+    --secondary-bg-color: #161413;
     --heading-color: rgb(240, 240, 234);
-    --body-color: rgb(240, 240, 234);
+    --body-color: rgb(227, 227, 220);
     --post-color: rgba(0, 0, 0, 0.44);
     --border-color: rgba(255, 209, 41, 0.15);
-    --form-border-color: rgb(240, 240, 234);
+    --form-border-color: rgb(227, 227, 220);
     --form-button-hover-border-color: #fff;
     --pre-bg-color: rgb(33, 33, 45);
     --nav-text-color: rgb(191, 191, 191);
@@ -436,6 +436,10 @@ a:active {
 .post .post-content {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1em;
+}
+
+.post .post-content .p_part p {
+    color: #c5c5c5;
 }
 
 .post .post-content li {
@@ -954,7 +958,7 @@ print {
     }
 
     .content {
-        margin-top: 420px;
+        margin-top: 335px;
         width: 100%;
         z-index: 2;
         position: absolute;
