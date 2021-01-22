@@ -290,7 +290,7 @@ a:active {
 }
 
 .sidebar .logo-title .description {
-    font-size: 14px;
+    font-size: 0.7em;
 }
 
 .sidebar .logo-title .logo {
@@ -302,21 +302,20 @@ a:active {
     border-radius: 50%;
 }
 
-.sidebar .logo-title .title h3 {
+.sidebar .logo-title .title .title-text {
     /* text-transform: uppercase; */
     font-size: 2em;
     font-weight: bold;
     letter-spacing: 2px;
     /* line-height: 1; */
     /* margin: 1em; */
-    margin-bottom: 0em;
 }
 
-.sidebar .logo-title .title h3.compact {
+.sidebar .logo-title .title .title-text.compact {
     display: none;
 }
 
-.sidebar .logo-title .title h3 span {
+.sidebar .logo-title .title .title-text span {
     /* color: #14c3ed; */
     /* color: #129ad5; */
     /* background: var(--bg-color-sidebar);
@@ -951,7 +950,7 @@ print {
         text-align: left;
     }
 
-    .sidebar .title h3 span {
+    .sidebar .title .title-text span {
         font-size: 0.4em;
     }
 
@@ -963,35 +962,42 @@ print {
         width: 100px;
     }
 
-    .sidebar .logo-title .title h3 {
-        font-size: 20px;
-    }
-
-    .sidebar .logo-title .title h3 {
+    .sidebar .logo-title .title .title-text {
         margin: 0;
         display: none;
     }
 
-    .sidebar .logo-title .title h3.compact {
+    .sidebar .logo-title .title .title-text.compact {
         padding: 0 1em;
-        margin-bottom: -0.5em;
+        margin-bottom: -5px;
         display: block;
         /* text-align: left; */
     }
 
+    .sidebar .logo-title .title .title-text.compact span {
+        font-size: 0.50em;
+        /* text-align: left; */
+    }
+
     .sidebar .logo-title .title .author-by {
-        font-size: 0.6em;
+        font-size: 0.7em;
         margin-left: 5em;
     }
 
     .sidebar .logo-title .title .author {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
-    .sidebar .logo-title .description{
+    .sidebar .logo-title .description {
         /* float: right; */
         /* text-align: right; */
         display: none;
+        margin-left: 1em;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 0.7em;
     }
 
     .sidebar .social-links {
@@ -1011,7 +1017,7 @@ print {
     }
 
     .content {
-        /* margin-top: 1em; */
+        margin-top: 0;
         width: 100%;
         z-index: 2;
         position: absolute;
@@ -1026,8 +1032,10 @@ print {
     }
 
     .page-top .nav {
+        width: auto;
         /* position: sticky; */
-        /* float: right; */
+        float: right;
+        z-index: 0;
         /* display: none;
         top: 0;
         right: 0; */
