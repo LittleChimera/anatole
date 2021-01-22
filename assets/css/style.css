@@ -443,6 +443,10 @@ a:active {
     font-size: 1.1em;
 }
 
+.post .post-content p {
+    margin-bottom: 2em;
+}
+
 .post .post-content .p_part p {
     color: #c5c5c5;
 }
